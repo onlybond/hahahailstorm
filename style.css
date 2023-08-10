@@ -21,6 +21,19 @@ body {
   }
 }
 
+header{
+  display: flex;
+  height: 10vw;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 6vw;
+  filter:brightness(0.2);
+  -webkit-filter:brightness(0.2);
+}
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
