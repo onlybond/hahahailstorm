@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Replace with your API key
     const apiKey = window.OPEN_WEATHER_API_KEY;
+    console.log(apiKey);
     const apiUrl = "https://api.openweathermap.org/data/2.5/";
 
     function getWeatherData(latitude, longitude) {
