@@ -32,10 +32,8 @@ jobs:
         uses: actions/configure-pages@v3
 
       # Add a step to inject the API key into your JavaScript code
-      - name: Inject API Key
-        run: |
-          sed -i "s/process.env.OPEN_WEATHER_API_KEY/${{ secrets.OPEN_WEATHER_API_KEY }}/g" script.js
-
+      - name: Set environment variable
+        run: echo "window.OPEN_WEATHER_API_KEY='${{ secrets.OPEN_WEATHER_API_KEY }}';" >> $GITHUB_ENV
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
