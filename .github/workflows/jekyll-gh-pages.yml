@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
+  #Build
   build:
     runs-on: ubuntu-latest
     steps:
@@ -30,6 +30,12 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
+      # Add a step to inject the API key into your JavaScript code
+      - name: Inject API Key
+        run: |
+          sed -i "s/process.env.OPEN_WEATHER_API_KEY/${{ secrets.OPEN_WEATHER_API_KEY }}/g" script.js
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -37,7 +43,6 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-
   # Deployment job
   deploy:
     environment:
