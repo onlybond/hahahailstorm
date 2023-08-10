@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const next5DaysContainer = document.querySelector(".next-5-days__container");
 
     // Replace with your API key
-    const apiKey = "519a2f56fb216fe986dc1772d5daf516";
+    const apiKey = process.env.OPEN_WEATHER_API_KEY;
     const apiUrl = "https://api.openweathermap.org/data/2.5/";
 
     function getWeatherData(latitude, longitude) {
