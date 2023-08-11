@@ -1,7 +1,6 @@
 # example netlify.toml
 [build]
   command = 'echo -e "export const API_KEY = "5e5b8607c0a82a141f34f7b686223a27";" > config.js'
-  functions = "netlify/functions"
   publish = "."
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
