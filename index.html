@@ -15,13 +15,20 @@
   <main class="main-container">
 
     <header>
-      <img src="images/hahahailstormwithname.png" alt="" class="logo">
-      <div class="search-bar">
-        <input type="text" id="location-input" placeholder="Enter a location">
-        <div class="suggestions"></div>
+      <object type="image/svg+xml" data="images/HAHAHAILSTORM.svg" class="logo">
+        Your browser does not support SVG.
+      </object>
+      <div class="nav">  
+        <a href="/">
+          <div class="current-location"></div>
+        </a>
+        <div class="search-bar">
+          <input type="text" id="location-input" placeholder="Enter a location">
+          <div class="suggestions"></div>
+        </div>
+        <button type="button" class="search-btn">Search</button>
       </div>
     </header>
-
     <div class="location-and-date">
       <h1 class="location-and-date__location"></h1>
       <div class="location-and-date__location-date"></div>
@@ -33,8 +40,8 @@
         <img src="" class="current-temperature__icon" alt="">
       </div>
       <div class="current-temperature__content-container">
-        <div class="current-temperature__value"></div>
         <div class="current-temperature__summary"></div>
+        <div class="current-temperature__value"></div>
       </div>
     </div>
 
@@ -57,174 +64,15 @@
     <div class="next-5-days">
       <h2 class="next-5-days__heading"></h2>
       <div class="next-5-days__container">
-
-        <div class="next-5-days__row">
-
-          <div class="next-5-days__date">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__low">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__high">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__icon">
-            <img src="" alt="">
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__rain">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__wind">
-            
-            <div class="next-5-days__label"></div>
-          </div>
-
-        </div>
-        <div class="next-5-days__row">
-
-          <div class="next-5-days__date">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__low">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__high">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__icon">
-            <img src="" alt="">
-          </div>
-
-          <div class="next-5-days__rain">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__wind">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-        </div>
-        <div class="next-5-days__row">
-
-          <div class="next-5-days__date">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__low">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__high">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__icon">
-            <img src="" alt="">
-          </div>
-
-          <div class="next-5-days__rain">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__wind">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-        </div>
-        <div class="next-5-days__row">
-
-          <div class="next-5-days__date">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__low">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__high">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__icon">
-            <img src="" alt="">
-          </div>
-
-          <div class="next-5-days__rain">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__wind">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-        </div>
-        <div class="next-5-days__row">
-
-          <div class="next-5-days__date">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__low">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__high">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__icon">
-            <img src="" alt="">
-          </div>
-
-          <div class="next-5-days__rain">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-          <div class="next-5-days__wind">
-
-            <div class="next-5-days__label"></div>
-          </div>
-
-        </div>
-
       </div>
     </div>
-
+    <div class="scroll-message"><span></span>Scroll down</div>
   </main>
-  <script src="script.js" type="module"></script>"
+  <script src="script.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <!-- Add this script tag after the gsap script tag -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
+
 </body>
 
 </html>
