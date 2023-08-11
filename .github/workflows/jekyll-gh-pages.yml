@@ -33,7 +33,7 @@ jobs:
 
       # Add a step to inject the API key into your JavaScript code
       - name: Set environment variable
-        run: echo "window.OPEN_WEATHER_API_KEY='${{ secrets.OPEN_WEATHER_API_KEY }}';" >> $GITHUB_ENV
+        run: echo -e "export const API_KEY = "5e5b8607c0a82a141f34f7b686223a27";" > config.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
