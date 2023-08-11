@@ -36,16 +36,17 @@ header {
 .scroll-message {
   position: fixed;
   bottom: 20px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 30px;
   transform: translateX(10%);
   font-size: 16px;
   color: white;
   opacity: 1;
-  -webkit-transform: translateX(10%);
-  -moz-transform: translateX(10%);
-  -ms-transform: translateX(10%);
-  -o-transform: translateX(10%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .scroll-message span {
