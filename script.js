@@ -1,3 +1,4 @@
+import {API_KEY} from './config.js'
 document.addEventListener("DOMContentLoaded", () => {
     const locationElement = document.querySelector(".location-and-date__location");
     const locationDate = document.querySelector(".location-and-date__location-date");
